@@ -1,0 +1,22 @@
+# https://github.com/bram209/leptosfmt/blob/main/docs/configuration.md
+
+# "Always", "AlwaysUnlessLit", "WhenRequired" or "Preserve"
+attr_value_brace_style = "WhenRequired"
+# "Preserve", "SelfClosing" or "NonSelfClosing"
+closing_tag_style = "Preserve"
+# "Tabs", "Spaces" or "Auto"
+indentation_style = "Tabs"
+# Macro names which will be formatted
+macro_names = [ "leptos::view", "view" ]
+# Maximum width of each line
+max_width = 100
+# "Unix", "Windows" or "Auto"
+newline_style = "Auto"
+# Number of spaces per tab
+tab_spaces = 4
+
+# Attribute values can be formatted by custom formatters.
+# Every attribute name may only select one formatter (this might change later on).
+[attr_values]
+# "Tailwind" is the only attribute value formatter available for now
+class = "Tailwind"

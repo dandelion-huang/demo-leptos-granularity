@@ -78,7 +78,7 @@ fn BgContainer(
 	view! {
 		<div class=format!(
 			"{} {}",
-			class.unwrap_or("relative p-16 text-center"),
+			class.unwrap_or("relative p-12 sm:p-16 text-center"),
 			random_bg_color(),
 		)>
 			<p class="absolute right-0 left-0 top-1 mx-auto">"Count: " {count}</p>
@@ -93,7 +93,7 @@ fn HomePage() -> impl IntoView {
 	let (count, set_count) = signal(0);
 
 	view! {
-		<div class="flex flex-col gap-16 justify-center items-center bg-black h-dvh">
+		<div class="flex flex-col gap-12 justify-center items-center bg-black sm:gap-16 h-dvh">
 			<BgContainer count=count>
 				<BgContainer count=count>
 					<BgContainer count=count>{}</BgContainer>
